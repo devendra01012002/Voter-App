@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
          <Route path="/" element={< Home/>} />
         <Route path="/Login" element={< Login/>} />
-        <Route path="/Signup" element={< SignUp/>} />
+        <Route path="/signup" element={< SignUp/>} />
         {/* <Route path="/invalid" element={< InvalidPage/>} /> */}
       </Routes>
     </React.Fragment>
