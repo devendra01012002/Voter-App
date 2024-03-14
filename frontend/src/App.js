@@ -3,17 +3,19 @@ import { Route, Routes } from 'react-router-dom'
 import Login from './Components/Login/Login'
 import SignUp from './Components/SignUp/SignUp'
 import Home from './Components/Home/Home'
+import Navbar from './Components/partials/Navbar'
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Navbar/>
       <Routes>
-      <Route path="/" element={< Home/>} />
+         <Route path="/" element={< Home/>} />
         <Route path="/Login" element={< Login/>} />
         <Route path="/Signup" element={< SignUp/>} />
         {/* <Route path="/invalid" element={< InvalidPage/>} /> */}
       </Routes>
-    </div>
+    </React.Fragment>
   )
 }
 
